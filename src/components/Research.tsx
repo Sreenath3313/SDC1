@@ -79,7 +79,7 @@ const Research: React.FC = () => {
                             <h3 className="font-serif text-2xl font-semibold text-white mb-3">
                                 {themes[0].title}
                             </h3>
-                            <p className="text-white/50 text-[14px] leading-relaxed max-w-md">
+                            <p className="text-white/50 text-[14px] leading-relaxed max-w-md text-justify">
                                 {themes[0].description}
                             </p>
                         </div>
@@ -111,7 +111,7 @@ const Research: React.FC = () => {
                                     <h3 className="font-serif text-lg font-semibold text-white mb-1.5">
                                         {theme.title}
                                     </h3>
-                                    <p className="text-white/45 text-[13px] leading-relaxed">
+                                    <p className="text-white/45 text-[13px] leading-relaxed text-justify">
                                         {theme.description}
                                     </p>
                                 </div>

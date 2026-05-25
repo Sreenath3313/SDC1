@@ -38,16 +38,16 @@ const DepartmentFaculty: React.FC<DepartmentFacultyProps> = ({ dept }) => {
                     return (
                         <div key={i} className="flex flex-col items-center text-center group bg-white">
                             {/* Image Section */}
-                            <div className="w-full max-w-[280px] aspect-[4/5] mb-6 flex items-end justify-center overflow-hidden bg-white">
+                            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:shadow-lg transition-all duration-300 shrink-0">
                                 {faculty.image ? (
                                     <img
                                         src={faculty.image}
                                         alt={faculty.name}
-                                        className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                 ) : (
                                     <div
-                                        className="w-56 h-56 rounded-full flex items-center justify-center text-5xl font-serif font-bold transition-transform duration-700 group-hover:scale-105 mb-4 border-2 border-[#F85E00]/10"
+                                        className="w-full h-full flex items-center justify-center text-4xl font-serif font-bold transition-transform duration-700 group-hover:scale-105"
                                         style={{
                                             background: '#FFF5EB',
                                             color: '#F85E00',

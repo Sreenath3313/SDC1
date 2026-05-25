@@ -35,7 +35,7 @@ const AdmissionsSection: React.FC = () => {
                         Begin Your Journey at SRIT
                     </h2>
 
-                    <p className="text-white/40 text-base lg:text-lg leading-relaxed mb-12">
+                    <p className="text-white/40 text-base lg:text-lg leading-relaxed mb-12 text-justify">
                         Admissions are conducted through a transparent procedure — Category-A
                         seats filled via EAPCET convener based on candidate ranks, and
                         Category-B seats through management following APSCHE guidelines.

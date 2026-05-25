@@ -15,7 +15,7 @@ const InstitutionalOverview: React.FC = () => {
                             <br />
                             <span className="italic font-medium text-primary-dark">Educational Excellence</span>
                         </h2>
-                        <div className="space-y-5 text-neutral-700 leading-relaxed font-sans">
+                        <div className="space-y-5 text-neutral-700 leading-relaxed font-sans text-justify">
                             <p className="text-lg">
                                 Srinivasa Ramanujan Institute of Technology was established by
                                 Founder-cum-Secretary Sri Aluru Sambasiva Reddy in November 2007,

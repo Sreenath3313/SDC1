@@ -100,7 +100,7 @@ const MentorshipSection: React.FC = () => {
                                     {mentor.specialization}
                                 </p>
                             </div>
-                            <p className="text-neutral-600 text-sm leading-relaxed border-t border-neutral-200/60 pt-4">
+                            <p className="text-neutral-600 text-sm leading-relaxed border-t border-neutral-200/60 pt-4 text-justify">
                                 {mentor.focus}
                             </p>
                         </motion.div>

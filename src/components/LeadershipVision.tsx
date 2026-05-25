@@ -27,138 +27,119 @@ const LeadershipVision: React.FC = () => {
                 </div>
 
                 {/* Fanned Cards Showcase */}
-                <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-0 md:-space-x-12 lg:-space-x-20">
+                {/* Clean Leadership Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1300px] mx-auto px-4">
                     
-                    {/* Chairman Card (Far Left) */}
+                    {/* Chairman Card */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50, y: 50, rotate: -30 }}
-                        animate={isInView ? { opacity: 1, x: 0, y: 0, rotate: -20 } : {}}
-                        whileHover={{ 
-                            rotate: 0, 
-                            scale: 1.05, 
-                            zIndex: 50,
-                            y: -20
-                        }}
-                        transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
-                        className="relative w-full max-w-[340px] lg:max-w-[380px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl cursor-pointer group z-0"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.6 }}
+                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
-                        <img
-                            src="/sambasir.jpg"
-                            alt="Sri. A. Sambasiva Reddy"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-8 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="font-serif text-3xl font-bold text-white mb-2 leading-tight">
+                        <div className="flex flex-col items-center w-full">
+                            {/* Circular Image wrapper */}
+                            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
+                                <img
+                                    src="/sambasir.jpg"
+                                    alt="Sri. A. Sambasiva Reddy"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
                                 Sri. A. Sambasiva Reddy
                             </h3>
-                            <p className="text-[#ea580c] font-bold text-sm tracking-widest uppercase mb-4">
+                            <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
                                 FOUNDER & CHAIRMAN
                             </p>
-                            <div className="h-0 overflow-hidden group-hover:h-auto group-hover:mt-2 transition-all duration-500 opacity-0 group-hover:opacity-100">
-                                <p className="text-gray-200 italic text-[15px] leading-relaxed border-l-4 border-[#ea580c] pl-4">
-                                    "To provide value-based technical education and mold students into ethically strong and technologically competent professionals."
-                                </p>
-                            </div>
                         </div>
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                            "To provide value-based technical education and mold students into ethically strong and technologically competent professionals."
+                        </p>
                     </motion.div>
 
-                    {/* Mrs. Padmavathi Card (Center Left) */}
+                    {/* Mrs. Padmavathi Card */}
                     <motion.div
-                        initial={{ opacity: 0, x: -30, y: 50, rotate: -20 }}
-                        animate={isInView ? { opacity: 1, x: 0, y: 0, rotate: -8 } : {}}
-                        whileHover={{ 
-                            rotate: 0, 
-                            scale: 1.05, 
-                            zIndex: 50,
-                            y: -20
-                        }}
-                        transition={{ duration: 0.6, type: "spring", bounce: 0.4, delay: 0.1 }}
-                        className="relative w-full max-w-[340px] lg:max-w-[380px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl cursor-pointer group z-10 md:mt-4"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.6, delay: 0.1 }}
+                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
-                        <img
-                            src="/padmavathi.jpg"
-                            alt="Mrs. Padmavathi"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-8 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="font-serif text-3xl font-bold text-white mb-2 leading-tight">
+                        <div className="flex flex-col items-center w-full">
+                            {/* Circular Image wrapper */}
+                            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
+                                <img
+                                    src="/padmavathi.jpg"
+                                    alt="Mrs. Padmavathi"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
                                 Mrs. Padmavathi
                             </h3>
-                            <p className="text-[#ea580c] font-bold text-sm tracking-widest uppercase mb-4">
+                            <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
                                 DIRECTOR
                             </p>
-                            <div className="h-0 overflow-hidden group-hover:h-auto group-hover:mt-2 transition-all duration-500 opacity-0 group-hover:opacity-100">
-                                <p className="text-gray-200 italic text-[15px] leading-relaxed border-l-4 border-[#ea580c] pl-4">
-                                    "Committed to nurturing holistic development and driving excellence across academics and administration."
-                                </p>
-                            </div>
                         </div>
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                            "Committed to nurturing holistic development and driving excellence across academics and administration."
+                        </p>
                     </motion.div>
 
-                    {/* Dr. Ranjit Card (Center Right) */}
+                    {/* Dr. Ranjit Card */}
                     <motion.div
-                        initial={{ opacity: 0, y: 50, rotate: 10 }}
-                        animate={isInView ? { opacity: 1, y: 0, rotate: 8 } : {}}
-                        whileHover={{ 
-                            rotate: 0,
-                            scale: 1.05, 
-                            zIndex: 50,
-                            y: -20
-                        }}
-                        transition={{ duration: 0.6, type: "spring", bounce: 0.4, delay: 0.2 }}
-                        className="relative w-full max-w-[340px] lg:max-w-[380px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl cursor-pointer group z-20 md:mt-12"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
-                        <img
-                            src="/ranjit.jpg"
-                            alt="Dr. Ranjit"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-8 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="font-serif text-3xl font-bold text-white mb-2 leading-tight">
+                        <div className="flex flex-col items-center w-full">
+                            {/* Circular Image wrapper */}
+                            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
+                                <img
+                                    src="/ranjit.jpg"
+                                    alt="Dr. Ranjit"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
                                 Dr. Ranjit
                             </h3>
-                            <p className="text-[#ea580c] font-bold text-sm tracking-widest uppercase mb-4">
+                            <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
                                 TRAINING & PLACEMENT OFFICER
                             </p>
-                            <div className="h-0 overflow-hidden group-hover:h-auto group-hover:mt-2 transition-all duration-500 opacity-0 group-hover:opacity-100">
-                                <p className="text-gray-200 italic text-[15px] leading-relaxed border-l-4 border-[#ea580c] pl-4">
-                                    "Dedicated to bridging the gap between academia and industry to ensure successful and fulfilling careers for every student."
-                                </p>
-                            </div>
                         </div>
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                            "Dedicated to bridging the gap between academia and industry to ensure successful and fulfilling careers for every student."
+                        </p>
                     </motion.div>
 
-                    {/* Principal Card (Far Right) */}
+                    {/* Principal Card */}
                     <motion.div
-                        initial={{ opacity: 0, x: 50, y: 50, rotate: 30 }}
-                        animate={isInView ? { opacity: 1, x: 0, y: 0, rotate: 20 } : {}}
-                        whileHover={{ 
-                            rotate: 0, 
-                            scale: 1.05, 
-                            zIndex: 50,
-                            y: -20
-                        }}
-                        transition={{ duration: 0.6, type: "spring", bounce: 0.4, delay: 0.3 }}
-                        className="relative w-full max-w-[340px] lg:max-w-[380px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl cursor-pointer group z-30 md:mt-20"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
-                        <img
-                            src="/principal.jpg"
-                            alt="Dr. G. Balakrishna"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-8 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="font-serif text-3xl font-bold text-white mb-2 leading-tight">
+                        <div className="flex flex-col items-center w-full">
+                            {/* Circular Image wrapper */}
+                            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
+                                <img
+                                    src="/principal.jpg"
+                                    alt="Dr. G. Balakrishna"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
                                 Dr. G. Balakrishna
                             </h3>
-                            <p className="text-[#ea580c] font-bold text-sm tracking-widest uppercase mb-4">
+                            <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
                                 PRINCIPAL
                             </p>
-                            <div className="h-0 overflow-hidden group-hover:h-auto group-hover:mt-2 transition-all duration-500 opacity-0 group-hover:opacity-100">
-                                <p className="text-gray-200 italic text-[15px] leading-relaxed border-l-4 border-[#ea580c] pl-4">
-                                    "Our mission is to foster innovation and academic excellence, empowering students to become global leaders."
-                                </p>
-                            </div>
                         </div>
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                            "Our mission is to foster innovation and academic excellence, empowering students to become global leaders."
+                        </p>
                     </motion.div>
                 </div>
             </div>

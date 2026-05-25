@@ -30,11 +30,11 @@ const About: React.FC = () => {
                             Srinivasa Ramanujan
                         </h2>
 
-                        <div className="space-y-6 text-neutral-600 leading-[1.8] text-base lg:text-lg">
+                        <div className="space-y-6 text-neutral-600 leading-[1.8] text-base lg:text-lg text-justify">
                             <p>
                                 This Society was established by Founder-cum-Secretary Sri Aluru Sambasiva Reddy in November 2007 in memory of his mother, Late Smt. Aluru Narayanamma, to give shape to his firm belief that
                             </p>
-                            <blockquote className="border-l-4 border-primary/40 pl-6 italic text-neutral-800 font-medium text-lg lg:text-xl">
+                            <blockquote className="border-l-4 border-primary/40 pl-6 italic text-neutral-800 font-medium text-lg lg:text-xl text-left">
                                 "EDUCATION IS A KEY ENABLER FOR PROGRESS."
                             </blockquote>
                             <p>

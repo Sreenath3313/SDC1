@@ -51,7 +51,7 @@ const InstitutionIntro: React.FC = () => {
                             A Vision for<br />
                             Educational Excellence
                         </h2>
-                        <div className="space-y-6 text-neutral-700 leading-[1.85] text-[0.9375rem]">
+                        <div className="space-y-6 text-neutral-700 leading-[1.85] text-[0.9375rem] text-justify">
                             <p>
                                 Srinivasa Ramanujan Institute of Technology was established in
                                 2008 under the Smt. Aluru Narayanamma Memorial Educational
@@ -80,7 +80,7 @@ const InstitutionIntro: React.FC = () => {
                             <p className="label-caps text-primary tracking-[0.25em] mb-5">
                                 Vision
                             </p>
-                            <p className="font-serif text-xl lg:text-[1.375rem] text-neutral-dark leading-relaxed">
+                            <p className="font-serif text-xl lg:text-[1.375rem] text-neutral-dark leading-relaxed text-justify">
                                 To become a premier educational institution in India offering
                                 the best teaching and learning environment, enabling students
                                 to become complete individuals with professional competency,
@@ -95,7 +95,7 @@ const InstitutionIntro: React.FC = () => {
                             <p className="label-caps text-primary tracking-[0.25em] mb-5">
                                 Mission
                             </p>
-                            <ul className="space-y-5 text-neutral-700 text-[0.9375rem] leading-[1.8]">
+                            <ul className="space-y-5 text-neutral-700 text-[0.9375rem] leading-[1.8] text-justify">
                                 <li className="pl-5 border-l-2 border-primary/20">
                                     Continually enhance the quality of physical infrastructure
                                     and human resources to evolve into a center of excellence

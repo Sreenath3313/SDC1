@@ -46,15 +46,15 @@ const Footer: React.FC = () => {
         <footer className="bg-neutral-dark text-white">
             {/* Top accent line */}
             <div className="h-[2px] bg-primary/20" />
-            <div className="section-container pt-16 pb-12">
+            <div className="section-container pt-10 pb-6">
                 {/* Top — logo + contact */}
-                <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-14 pb-10 border-b border-white/8">
+                <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-8 pb-6 border-b border-white/8">
                     <div>
                         <Link to="/" className="font-serif text-xl lg:text-2xl font-bold text-white tracking-wide">
                             Srinivasa Ramanujan<br />
                             Institute of Technology
                         </Link>
-                        <p className="text-white/30 text-sm mt-3">
+                        <p className="text-white/30 text-sm mt-1.5">
                             Rotarypuram, Anantapur — 515701, Andhra Pradesh
                         </p>
                     </div>
@@ -70,11 +70,11 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Link columns */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 lg:gap-6 mb-14">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                     {Object.entries(columns).map(([title, links]) => (
                         <div key={title}>
-                            <p className="label-caps text-white/20 mb-5">{title}</p>
-                            <ul className="space-y-3">
+                            <p className="label-caps text-white/20 mb-3">{title}</p>
+                            <ul className="space-y-1.5">
                                 {links.map((link) => (
                                     <li key={link.label}>
                                         {link.external ? (
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Bottom — copyright + social */}
-                <div className="pt-8 border-t border-white/6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="pt-6 border-t border-white/6 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-white/15 text-xs">
                         © 2007–{new Date().getFullYear()} Srinivasa Ramanujan Institute of Technology. All rights reserved.
                     </p>

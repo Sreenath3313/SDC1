@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
                             Inspired by the Legacy of<br />
                             Srinivasa Ramanujan
                         </h2>
-                        <div className="space-y-6 text-neutral-700 leading-[1.8] text-base lg:text-lg">
+                        <div className="space-y-6 text-neutral-700 leading-[1.8] text-base lg:text-lg text-justify">
                             <p>
                                 Srinivasa Ramanujan Institute of Technology was established in 2007 by
                                 Founder-cum-Secretary Sri Aluru Sambasiva Reddy under the

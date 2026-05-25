@@ -73,7 +73,7 @@ const Departments: React.FC = () => {
                             <h3 className="font-serif text-2xl lg:text-3xl font-bold text-neutral-dark mb-4">
                                 {featuredDept.name}
                             </h3>
-                            <p className="text-neutral-600 text-[15px] leading-[1.8] mb-8 lg:max-w-2xl">
+                            <p className="text-neutral-600 text-[15px] leading-[1.8] mb-8 lg:max-w-2xl text-justify">
                                 {featuredDept.description[0]}
                             </p>
 

@@ -38,22 +38,21 @@ const MessageFromHead: React.FC = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
-                            className="flex flex-col gap-8"
+                            className="flex flex-col items-center text-center gap-6"
                         >
-                            <div className="relative isolate">
-                                <div className="absolute inset-0 bg-primary/10 rounded-3xl -mx-4 -my-4 -z-10 rotate-[-2deg]"></div>
-                                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative">
+                            <div className="relative isolate w-64 h-64 md:w-72 md:h-72">
+                                <div className="absolute inset-0 bg-primary/10 rounded-full -mx-2 -my-2 -z-10 rotate-[-2deg]"></div>
+                                <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white bg-neutral-100 relative">
                                     <img
                                         src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                         alt="Principal Portrait"
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-transparent"></div>
-                                    <div className="absolute bottom-0 left-0 w-full p-6 text-white">
-                                        <h3 className="font-serif text-2xl font-bold">Dr. T. Hitendra Sarma</h3>
-                                        <p className="text-white/80 mt-1">Principal, SRIT</p>
-                                    </div>
                                 </div>
+                            </div>
+                            <div>
+                                <h3 className="font-serif text-2xl font-bold text-neutral-900">Dr. T. Hitendra Sarma</h3>
+                                <p className="text-primary font-semibold text-sm mt-1">Principal, SRIT</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-sm border border-neutral-100">
@@ -85,13 +84,13 @@ const MessageFromHead: React.FC = () => {
                             {/* Quote highlight */}
                             <div className="relative">
                                 <Quote className="absolute -top-6 -left-2 sm:-left-6 w-14 h-14 sm:w-16 sm:h-16 text-primary/10 rotate-180" />
-                                <h3 className="font-serif text-2xl lg:text-3xl text-neutral-800 leading-snug relative z-10 italic">
+                                <h3 className="font-serif text-2xl lg:text-3xl text-neutral-800 leading-snug relative z-10 italic text-justify">
                                     "Education is not just about acquiring knowledge, but about developing the mindset to apply that knowledge for the betterment of society. At SRIT, we nurture innovators who lead with purpose."
                                 </h3>
                             </div>
 
                             {/* Full text */}
-                            <div className="prose prose-lg prose-neutral max-w-none text-neutral-600">
+                            <div className="prose prose-lg prose-neutral max-w-none text-neutral-600 text-justify">
                                 <p>
                                     Welcome to Srinivasa Ramanujan Institute of Technology (SRIT), where excellence is a habit and innovation is an everyday pursuit. Since our inception, we have been committed to providing a transformative educational experience that extends far beyond the traditional classroom.
                                 </p>

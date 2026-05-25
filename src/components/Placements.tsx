@@ -78,11 +78,11 @@ const Placements: React.FC = () => {
                         </motion.h2>
                         <motion.p 
                             variants={itemVariants} 
-                            className="text-neutral-600 text-sm md:text-[15px] leading-relaxed mb-10 max-w-lg"
+                            className="text-neutral-600 text-sm md:text-[15px] leading-relaxed mb-10 max-w-lg text-justify"
                         >
                             SRIT has an outstanding placement record with top companies recruiting our students year after year. Our dedicated Training &amp; Placement cell prepares students with industry-ready skills.
                         </motion.p>
-
+ 
                         {/* Stats Grid */}
                         <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4 lg:gap-5 mb-8">
                             {stats.map((stat, idx) => {
@@ -103,7 +103,7 @@ const Placements: React.FC = () => {
                                 );
                             })}
                         </motion.div>
-
+ 
                         <motion.a 
                             variants={itemVariants}
                             href="#"
@@ -112,7 +112,7 @@ const Placements: React.FC = () => {
                             Know More
                         </motion.a>
                     </motion.div>
-
+ 
                     {/* Right Side: Recruiters Grid */}
                     <motion.div 
                         initial={{ opacity: 0, x: 40 }}
@@ -126,17 +126,19 @@ const Placements: React.FC = () => {
                             </h3>
                             <div className="w-10 h-[3px] bg-[#ea580c] mx-auto rounded-full" />
                         </div>
-
+ 
                         <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-3">
                             {recruiters.map((recruiter, idx) => (
-                                <div 
+                                <motion.div 
                                     key={idx}
-                                    className="border border-neutral-200/60 bg-white p-2 flex items-center justify-center text-center hover:border-neutral-350 hover:bg-neutral-50 transition-colors rounded-sm min-h-[50px] lg:min-h-[55px]"
+                                    whileHover={{ scale: 1.05, y: -2 }}
+                                    transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                                    className="border border-neutral-200/60 bg-white p-2 flex items-center justify-center text-center hover:border-[#ea580c] hover:bg-[#ea580c] transition-all duration-300 rounded-sm min-h-[50px] lg:min-h-[55px] cursor-pointer group hover:shadow-lg hover:shadow-orange-500/10"
                                 >
-                                    <span className="text-[13px] lg:text-sm font-bold text-neutral-700">
+                                    <span className="text-[13px] lg:text-sm font-bold text-neutral-700 group-hover:text-white transition-colors duration-300">
                                         {recruiter}
                                     </span>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </motion.div>

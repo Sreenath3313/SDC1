@@ -17,7 +17,7 @@ const DepartmentAbout: React.FC<DepartmentAboutProps> = ({ dept }) => {
                         <span className="w-10 h-[3px] bg-primary rounded-full"></span>
                         ABOUT THE DEPARTMENT
                     </h2>
-                    <div className="text-neutral-600 text-base lg:text-lg leading-[1.85] space-y-5 mt-8">
+                    <div className="text-neutral-600 text-base lg:text-lg leading-[1.85] space-y-5 mt-8 text-justify">
                         {dept.description.map((para, idx) => (
                             <p key={idx}>{para}</p>
                         ))}
@@ -29,13 +29,13 @@ const DepartmentAbout: React.FC<DepartmentAboutProps> = ({ dept }) => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div>
                             <h3 className="text-primary font-black text-sm lg:text-[15px] uppercase tracking-[0.2em] mb-5">Vision</h3>
-                            <p className="text-neutral-600 text-[15px] lg:text-[17px] leading-[1.8]">
+                            <p className="text-neutral-600 text-[15px] lg:text-[17px] leading-[1.8] text-justify">
                                 {dept.vision}
                             </p>
                         </div>
                         <div>
                             <h3 className="text-primary font-black text-sm lg:text-[15px] uppercase tracking-[0.2em] mb-5">Mission</h3>
-                            <div className="text-neutral-600 text-[15px] lg:text-[17px] leading-[1.8] space-y-3">
+                            <div className="text-neutral-600 text-[15px] lg:text-[17px] leading-[1.8] space-y-3 text-justify">
                                 {dept.mission.map((m) => (
                                     <p key={m.id}>{m.text}</p>
                                 ))}
@@ -62,7 +62,7 @@ const DepartmentAbout: React.FC<DepartmentAboutProps> = ({ dept }) => {
                         <p className="text-primary text-xs lg:text-[13px] font-bold uppercase tracking-[0.2em] mt-3 mb-6">
                             {dept.hodMessage.designation}
                         </p>
-                        <p className="text-neutral-600 italic text-base lg:text-lg leading-[1.8] mb-8 font-serif">
+                        <p className="text-neutral-600 italic text-base lg:text-lg leading-[1.8] mb-8 font-serif text-justify">
                             "{dept.hodMessage.message}"
                         </p>
                         <p className="text-neutral-400 text-sm lg:text-[15px] font-semibold">

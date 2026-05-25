@@ -59,7 +59,7 @@ const NewsAnnouncements: React.FC = () => {
                             <h3 className="font-serif text-xl font-bold text-neutral-dark mb-4 leading-snug group-hover:text-primary transition-colors duration-300">
                                 {news.headline}
                             </h3>
-                            <p className="text-neutral-500 text-sm leading-relaxed mb-6">
+                            <p className="text-neutral-500 text-sm leading-relaxed mb-6 text-justify">
                                 {news.summary}
                             </p>
 

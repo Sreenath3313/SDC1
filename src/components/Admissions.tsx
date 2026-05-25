@@ -57,7 +57,7 @@ const Admissions: React.FC = () => {
                     {/* Subheadline */}
                     <motion.p 
                         variants={itemVariants}
-                        className="relative z-10 text-white/70 text-sm md:text-base lg:text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-10"
+                        className="relative z-10 text-white/70 text-sm md:text-base lg:text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-10 text-justify"
                     >
                         Admissions through AP EAPCET (Category-A) and management quota
                         (Category-B) following APSCHE guidelines. B.Tech programs across

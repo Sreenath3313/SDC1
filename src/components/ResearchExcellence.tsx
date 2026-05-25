@@ -39,7 +39,7 @@ const ResearchExcellence: React.FC = () => {
                             <span className="italic font-medium">Learning & Growth</span>
                         </h2>
                     </div>
-                    <p className="text-neutral-500 max-w-md mt-6 lg:mt-0 leading-relaxed font-sans">
+                    <p className="text-neutral-500 max-w-md mt-6 lg:mt-0 leading-relaxed font-sans text-justify">
                         SRIT provides state-of-the-art facilities and industry partnerships
                         to ensure students are equipped with practical knowledge and are
                         career-ready from day one.
@@ -64,7 +64,7 @@ const ResearchExcellence: React.FC = () => {
                                 <h3 className="font-serif text-xl font-semibold text-neutral-dark mb-3 group-hover:text-primary-dark transition-colors duration-300">
                                     {facility.title}
                                 </h3>
-                                <p className="text-neutral-500 text-sm leading-relaxed font-sans">
+                                <p className="text-neutral-500 text-sm leading-relaxed font-sans text-justify">
                                     {facility.description}
                                 </p>
                                 <div className="mt-6 pt-6 border-t border-neutral-300/40">

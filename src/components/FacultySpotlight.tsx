@@ -44,42 +44,36 @@ const FacultySpotlight: React.FC = () => {
                         </motion.div>
                     </div>
 
-                    {/* Right: Faculty Grid (Staggered) */}
+                    {/* Right: Faculty Grid */}
                     <div className="lg:w-2/3">
-                        <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12 sm:gap-y-0">
+                        <div className="grid sm:grid-cols-2 gap-8">
                             {facultyProfiles.map((faculty, i) => (
                                 <motion.div
                                     key={faculty.id}
                                     initial={{ opacity: 0, y: 40 }}
                                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                                     transition={{ duration: 0.6, delay: i * 0.15 }}
-                                    className={`group cursor-pointer ${i % 2 !== 0 ? 'sm:mt-24' : 'sm:mb-24'}`}
+                                    className="group bg-white/5 border border-white/10 rounded-3xl p-8 text-center flex flex-col items-center justify-between hover:bg-white/10 hover:border-primary/30 transition-all duration-300"
                                 >
-                                    <div className="relative overflow-hidden bg-neutral-800 rounded-lg group-hover:shadow-[0_20px_40px_rgba(194,65,12,0.15)] transition-all duration-500">
-                                        <div className="aspect-[4/5] relative">
+                                    <div className="flex flex-col items-center w-full">
+                                        {/* Circular Image wrapper */}
+                                        <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/10 shadow-lg bg-neutral-800 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500 shrink-0">
                                             <img
                                                 src={faculty.image}
                                                 alt={faculty.name}
-                                                className="w-full h-full object-cover grayscale opacity-80 transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
+                                                className="w-full h-full object-cover"
                                             />
-                                            {/* Gradient overlay for text readability */}
-                                            <div className="absolute inset-0 bg-gradient-to-t from-neutral-dark via-neutral-dark/50 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" />
-
-                                            {/* Text Content overlay */}
-                                            <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                                <div className="h-[2px] w-8 bg-primary mb-5 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 delay-100" />
-                                                <h3 className="font-serif text-2xl font-bold text-white mb-1 drop-shadow-sm">
-                                                    {faculty.name}
-                                                </h3>
-                                                <p className="text-primary text-[11px] font-bold tracking-[0.15em] uppercase mb-2 drop-shadow-md">
-                                                    {faculty.department}
-                                                </p>
-                                                <p className="text-white/80 text-[13px] leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 lg:max-w-[90%] border-t border-white/10 pt-3 mt-3">
-                                                    {faculty.specialization}
-                                                </p>
-                                            </div>
                                         </div>
+                                        <h3 className="font-serif text-2xl font-bold text-white mb-1">
+                                            {faculty.name}
+                                        </h3>
+                                        <p className="text-primary text-[12px] font-bold tracking-widest uppercase mb-4">
+                                            {faculty.department}
+                                        </p>
                                     </div>
+                                    <p className="text-white/60 text-sm leading-relaxed border-t border-white/10 pt-4 mt-2 text-justify w-full">
+                                        Specialization: {faculty.specialization}
+                                    </p>
                                 </motion.div>
                             ))}
                         </div>
