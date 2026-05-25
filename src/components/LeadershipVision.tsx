@@ -58,7 +58,7 @@ const LeadershipVision: React.FC = () => {
                         </p>
                     </motion.div>
 
-                    {/* Mrs. Padmavathi Card */}
+                    {/* Smt. Jonnalagadda Padmavathy Card */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -70,12 +70,12 @@ const LeadershipVision: React.FC = () => {
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
                                 <img
                                     src="/padmavathi.jpg"
-                                    alt="Mrs. Padmavathi"
+                                    alt="Smt. Jonnalagadda Padmavathy"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
-                                Mrs. Padmavathi
+                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight text-center">
+                                Smt. Jonnalagadda Padmavathy
                             </h3>
                             <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
                                 DIRECTOR
