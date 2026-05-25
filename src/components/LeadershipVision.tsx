@@ -53,7 +53,7 @@ const LeadershipVision: React.FC = () => {
                                 FOUNDER & CHAIRMAN
                             </p>
                         </div>
-                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-center w-full">
                             "To provide value-based technical education and mold students into ethically strong and technologically competent professionals."
                         </p>
                     </motion.div>
@@ -81,12 +81,12 @@ const LeadershipVision: React.FC = () => {
                                 DIRECTOR
                             </p>
                         </div>
-                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-center w-full">
                             "Committed to nurturing holistic development and driving excellence across academics and administration."
                         </p>
                     </motion.div>
 
-                    {/* Dr. Ranjit Card */}
+                    {/* Dr. Ranjith Reddy Card */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -98,18 +98,18 @@ const LeadershipVision: React.FC = () => {
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
                                 <img
                                     src="/ranjit.jpg"
-                                    alt="Dr. Ranjit"
+                                    alt="Dr. Ranjith Reddy"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
                             <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
-                                Dr. Ranjit
+                                Dr. Ranjith Reddy
                             </h3>
                             <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
-                                TRAINING & PLACEMENT OFFICER
+                                VICE PRESIDENT
                             </p>
                         </div>
-                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-center w-full">
                             "Dedicated to bridging the gap between academia and industry to ensure successful and fulfilling careers for every student."
                         </p>
                     </motion.div>
@@ -137,7 +137,7 @@ const LeadershipVision: React.FC = () => {
                                 PRINCIPAL
                             </p>
                         </div>
-                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-justify w-full">
+                        <p className="text-neutral-600 italic text-[14px] leading-relaxed border-t border-neutral-100 pt-4 mt-2 text-center w-full">
                             "Our mission is to foster innovation and academic excellence, empowering students to become global leaders."
                         </p>
                     </motion.div>

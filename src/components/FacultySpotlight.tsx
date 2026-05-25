@@ -71,7 +71,7 @@ const FacultySpotlight: React.FC = () => {
                                             {faculty.department}
                                         </p>
                                     </div>
-                                    <p className="text-white/60 text-sm leading-relaxed border-t border-white/10 pt-4 mt-2 text-justify w-full">
+                                    <p className="text-white/60 text-sm leading-relaxed border-t border-white/10 pt-4 mt-2 text-center w-full">
                                         Specialization: {faculty.specialization}
                                     </p>
                                 </motion.div>
