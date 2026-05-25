@@ -86,7 +86,7 @@ const LeadershipVision: React.FC = () => {
                         </p>
                     </motion.div>
 
-                    {/* Dr. Ranjith Reddy Card */}
+                    {/* Dr. M. Ranjit Reddy Card */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -98,12 +98,12 @@ const LeadershipVision: React.FC = () => {
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
                                 <img
                                     src="/ranjit.jpg"
-                                    alt="Dr. Ranjith Reddy"
+                                    alt="Dr. M. Ranjit Reddy"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight">
-                                Dr. Ranjith Reddy
+                            <h3 className="font-serif text-xl font-bold text-neutral-900 mb-1 leading-tight text-center">
+                                Dr. M. Ranjit Reddy
                             </h3>
                             <p className="text-primary font-bold text-[11px] tracking-wider uppercase mb-4">
                                 VICE PRESIDENT
