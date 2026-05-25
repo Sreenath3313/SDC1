@@ -74,7 +74,7 @@ const About: React.FC = () => {
                         <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-white to-transparent z-20 pointer-events-none" />
 
                         {/* Scrolling Container */}
-                        <div className="flex flex-col gap-10 h-[500px] lg:h-[650px] overflow-y-auto px-4 py-8 custom-scrollbar">
+                        <div className="flex flex-row lg:flex-col gap-6 lg:gap-10 h-auto lg:h-[650px] overflow-x-auto lg:overflow-y-auto px-4 py-4 lg:py-8 custom-scrollbar w-full">
                             {[
                                 { src: '/cert-iic.jpg', alt: 'IIC Certificate' },
                                 { src: '/cert-salesforce.jpg', alt: 'Salesforce Award' },
@@ -83,7 +83,7 @@ const About: React.FC = () => {
                             ].map((img, index) => (
                                 <motion.div 
                                     key={index} 
-                                    className="relative overflow-hidden rounded-2xl shadow-xl border border-neutral-100 bg-white group h-80 md:h-[400px] lg:h-[450px] w-full flex-shrink-0 cursor-pointer"
+                                    className="relative overflow-hidden rounded-2xl shadow-xl border border-neutral-100 bg-white group h-64 sm:h-80 md:h-[400px] lg:h-[450px] w-64 sm:w-80 md:w-[400px] lg:w-full flex-shrink-0 cursor-pointer"
                                     whileHover={{ 
                                         scale: 1.05, 
                                         zIndex: 50,

@@ -20,7 +20,7 @@ const Stats: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.05]" />
             <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
 
-            <div className="relative py-24 lg:py-32">
+            <div className="relative py-16 lg:py-24">
                 <div className="section-container">
                     <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-16 lg:gap-0">
                         {stats.map((item, i) => (
@@ -31,7 +31,7 @@ const Stats: React.FC = () => {
                                 transition={{ duration: 1, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] }}
                                 className={`group flex flex-col items-center justify-center text-center relative ${
                                     i > 0 ? 'lg:border-l lg:border-neutral-100' : ''
-                                }`}
+                                } ${i === 4 ? 'col-span-2 lg:col-span-1' : ''}`}
                             >
                                 {/* Micro-index label for architectural detail */}
                                 <div className="absolute top-0 right-1/2 translate-x-1/2 -mt-10 lg:-mt-12 text-[10px] font-bold text-neutral-300 tracking-[0.3em] font-serif transition-colors duration-500 group-hover:text-primary/40">

@@ -44,14 +44,14 @@ const MessageFromHead: React.FC = () => {
                                 <div className="absolute inset-0 bg-primary/10 rounded-full -mx-2 -my-2 -z-10 rotate-[-2deg]"></div>
                                 <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white bg-neutral-100 relative">
                                     <img
-                                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        src="/principal.jpg"
                                         alt="Principal Portrait"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-serif text-2xl font-bold text-neutral-900">Dr. T. Hitendra Sarma</h3>
+                                <h3 className="font-serif text-2xl font-bold text-neutral-900">Dr. G. Balakrishna</h3>
                                 <p className="text-primary font-semibold text-sm mt-1">Principal, SRIT</p>
                             </div>
 
@@ -84,7 +84,7 @@ const MessageFromHead: React.FC = () => {
                             {/* Quote highlight */}
                             <div className="relative">
                                 <Quote className="absolute -top-6 -left-2 sm:-left-6 w-14 h-14 sm:w-16 sm:h-16 text-primary/10 rotate-180" />
-                                <h3 className="font-serif text-2xl lg:text-3xl text-neutral-800 leading-snug relative z-10 italic text-justify">
+                                <h3 className="font-serif text-2xl lg:text-3xl text-neutral-800 leading-snug relative z-10 italic text-center lg:text-left">
                                     "Education is not just about acquiring knowledge, but about developing the mindset to apply that knowledge for the betterment of society. At SRIT, we nurture innovators who lead with purpose."
                                 </h3>
                             </div>
@@ -111,7 +111,7 @@ const MessageFromHead: React.FC = () => {
                                 </p>
 
                                 <div className="mt-12 pt-8 border-t border-neutral-200">
-                                    <p className="font-bold text-neutral-900 text-xl font-serif">Dr. T. Hitendra Sarma</p>
+                                    <p className="font-bold text-neutral-900 text-xl font-serif">Dr. G. Balakrishna</p>
                                     <p className="text-neutral-500 mt-1">Principal</p>
                                     <p className="text-neutral-500">Srinivasa Ramanujan Institute of Technology</p>
                                 </div>

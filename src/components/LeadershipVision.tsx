@@ -35,7 +35,7 @@ const LeadershipVision: React.FC = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6 }}
-                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
+                        className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
@@ -63,7 +63,7 @@ const LeadershipVision: React.FC = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
+                        className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
@@ -91,7 +91,7 @@ const LeadershipVision: React.FC = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
+                        className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
@@ -119,7 +119,7 @@ const LeadershipVision: React.FC = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
+                        className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-100 shadow-lg text-center flex flex-col items-center justify-between group hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}

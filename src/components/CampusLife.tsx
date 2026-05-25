@@ -122,7 +122,7 @@ const CampusLife: React.FC = () => {
 
                                 {/* Inactive Text (Hidden on mobile if not active, or shown differently) */}
                                 <div className={`absolute bottom-6 left-1/2 -translate-x-1/2 md:bottom-10 flex items-center justify-center transition-all duration-500 delay-100 ${isActive ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-                                    <span className="md:hidden font-sans text-[11px] text-neutral-600 font-bold uppercase tracking-[0.2em] whitespace-nowrap">
+                                    <span className="md:hidden font-sans text-[11px] text-neutral-200 font-bold uppercase tracking-[0.2em] whitespace-nowrap">
                                         {item.title.replace('_', ' ')}
                                     </span>
                                     <span style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }} className="hidden md:block font-sans text-xs md:text-sm lg:text-lg text-neutral-400 font-bold uppercase tracking-[0.2em] whitespace-nowrap">

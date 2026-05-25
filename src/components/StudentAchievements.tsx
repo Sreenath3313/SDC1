@@ -24,12 +24,12 @@ const duplicatedAchievements = [...achievements, ...achievements];
 
 const StudentAchievements: React.FC = () => {
     return (
-        <section id="student-achievements" className="py-20 bg-[#fcd4a6] overflow-hidden border-t border-orange-200">
-            <div className="container mx-auto px-6 mb-12">
+        <section id="student-achievements" className="py-16 md:py-20 bg-[#fcd4a6] overflow-hidden border-t border-orange-200">
+            <div className="section-container mb-12">
                 <h2 className="text-3xl md:text-4xl font-black text-[#0a2540] mb-4">
                     Students Achievements
                 </h2>
-                <p className="text-orange-900 max-w-3xl leading-relaxed text-lg">
+                <p className="text-orange-900 max-w-3xl leading-relaxed text-lg text-justify md:text-left">
                     Our Students have been achieving their dreams in all aspects. In short, our students have been spread over various fields and streams of society and have been growing with greater positions in society.
                 </p>
             </div>

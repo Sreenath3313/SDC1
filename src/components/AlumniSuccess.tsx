@@ -46,71 +46,49 @@ const AlumniSuccess: React.FC = () => {
 
                                 {/* ── TOP-LEFT WHITE CUTOUT ── */}
                                 <div
-                                    className="absolute top-0 left-0 bg-white z-10"
-                                    style={{
-                                        width: '130px',
-                                        height: '52px',
-                                        borderBottomRightRadius: '24px',
-                                    }}
+                                    className="absolute top-0 left-0 bg-white z-10 w-[110px] h-[40px] sm:w-[130px] sm:h-[52px] rounded-br-[24px]"
                                 />
                                 {/* Top Edge Outer Curve */}
                                 <div 
-                                    className="absolute top-0 z-10 pointer-events-none"
+                                    className="absolute top-0 z-10 pointer-events-none left-[110px] sm:left-[130px] w-[24px] h-[24px]"
                                     style={{
-                                        left: '130px',
-                                        width: '24px',
-                                        height: '24px',
                                         background: 'radial-gradient(circle at 100% 100%, transparent 24px, white 24px)'
                                     }}
                                 />
                                 {/* Left Edge Outer Curve */}
                                 <div 
-                                    className="absolute left-0 z-10 pointer-events-none"
+                                    className="absolute left-0 z-10 pointer-events-none top-[40px] sm:top-[52px] w-[24px] h-[24px]"
                                     style={{
-                                        top: '52px',
-                                        width: '24px',
-                                        height: '24px',
                                         background: 'radial-gradient(circle at 100% 100%, transparent 24px, white 24px)'
                                     }}
                                 />
 
                                 {/* ── BOTTOM-RIGHT WHITE CUTOUT ── */}
                                 <div
-                                    className="absolute bottom-0 right-0 bg-white z-10"
-                                    style={{
-                                        width: '150px',
-                                        height: '52px',
-                                        borderTopLeftRadius: '24px',
-                                    }}
+                                    className="absolute bottom-0 right-0 bg-white z-10 w-[120px] h-[40px] sm:w-[150px] sm:h-[52px] rounded-tl-[24px]"
                                 />
                                 {/* Bottom Edge Outer Curve */}
                                 <div 
-                                    className="absolute bottom-0 z-10 pointer-events-none"
+                                    className="absolute bottom-0 z-10 pointer-events-none right-[120px] sm:right-[150px] w-[24px] h-[24px]"
                                     style={{
-                                        right: '150px',
-                                        width: '24px',
-                                        height: '24px',
                                         background: 'radial-gradient(circle at 0% 0%, transparent 24px, white 24px)'
                                     }}
                                 />
                                 {/* Right Edge Outer Curve */}
                                 <div 
-                                    className="absolute right-0 z-10 pointer-events-none"
+                                    className="absolute right-0 z-10 pointer-events-none bottom-[40px] sm:bottom-[52px] w-[24px] h-[24px]"
                                     style={{
-                                        bottom: '52px',
-                                        width: '24px',
-                                        height: '24px',
                                         background: 'radial-gradient(circle at 0% 0%, transparent 24px, white 24px)'
                                     }}
                                 />
 
                                 {/* ── CARD CONTENT (sits above the white cutouts via z-20 on individual items) */}
-                                <div className="relative flex flex-col h-full p-7 pt-4">
+                                <div className="relative flex flex-col h-full p-5 sm:p-7 pt-4">
 
                                     {/* ROW 1: Batch (inside cutout space) + Role badge */}
                                     <div className="flex items-center justify-between mb-1">
                                         {/* Batch text – sits inside the top-left white area */}
-                                        <span className="z-20 text-base font-bold text-neutral-800 w-[100px] text-center -ml-5 -mt-1">
+                                        <span className="z-20 text-xs sm:text-base font-bold text-neutral-800 w-[90px] sm:w-[100px] text-center -ml-3 sm:-ml-5 -mt-0.5 sm:-mt-1">
                                             {alumni.batch} Batch
                                         </span>
 
@@ -140,17 +118,17 @@ const AlumniSuccess: React.FC = () => {
                                     {/* ROW 5: Bottom — button + register link */}
                                     <div className="z-20 flex items-end justify-between mt-7 pb-2">
                                         {/* Bottom-left: View Details button */}
-                                        <button className="bg-[#ea580c] hover:bg-orange-600 text-white text-base font-bold px-6 py-3 rounded-lg transition-colors shadow-sm">
+                                        <button className="bg-[#ea580c] hover:bg-orange-600 text-white text-xs sm:text-base font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg transition-colors shadow-sm">
                                             View Details
                                         </button>
 
                                         {/* Bottom-right: sits inside the white cutout — "Register Here ↗" */}
                                         <a
                                             href="#"
-                                            className="absolute bottom-0 right-0 z-20 w-[134px] h-[52px] flex items-center justify-center gap-1 text-orange-700 hover:text-orange-900 font-bold text-base transition-colors"
+                                            className="absolute bottom-0 right-0 z-20 w-[110px] h-[40px] sm:w-[134px] sm:h-[52px] flex items-center justify-center gap-0.5 sm:gap-1 text-orange-700 hover:text-orange-900 font-bold text-xs sm:text-base transition-colors"
                                         >
                                             Connect Here
-                                            <ArrowUpRight className="w-4 h-4" />
+                                            <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                                         </a>
                                     </div>
                                 </div>

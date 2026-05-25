@@ -24,7 +24,7 @@ const itemVariants = {
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative min-h-[100svh] w-full bg-neutral-dark overflow-hidden">
+        <section className="relative min-h-[100svh] w-full bg-neutral-dark overflow-hidden flex flex-col lg:block">
             
             {/* Background Image: Full Bleed underneath everything */}
             <motion.div 
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-                className="absolute top-0 left-0 bottom-0 z-10 w-full lg:w-[65%] xl:w-[55%] bg-gradient-to-r from-black/55 via-black/25 to-transparent flex flex-col justify-center pt-32 lg:pt-0 px-8 sm:px-12 xl:px-20"
+                className="relative lg:absolute top-0 left-0 bottom-0 z-10 w-full lg:w-[65%] xl:w-[55%] bg-black/60 lg:bg-gradient-to-r lg:from-black/55 lg:via-black/25 lg:to-transparent flex flex-col justify-center py-20 lg:py-0 px-6 sm:px-12 xl:px-20"
             >
                 <motion.div
                     variants={containerVariants}
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                     className="flex flex-col max-w-xl"
                 >
                     {/* Location Badge */}
-                    <motion.div variants={itemVariants} className="flex items-center gap-4 mb-10">
+                    <motion.div variants={itemVariants} className="flex items-center gap-4 mb-6 lg:mb-10">
                         <span className="w-12 h-1 bg-primary" />
                         <span className="text-white font-bold tracking-[0.25em] uppercase text-xs drop-shadow-sm">
                             Anantapur, AP
@@ -62,14 +62,14 @@ const Hero: React.FC = () => {
                     </motion.div>
 
                     {/* Main Title */}
-                    <motion.h1 variants={itemVariants} className="font-serif text-5xl md:text-6xl xl:text-[80px] font-black text-white leading-[1.05] tracking-tight mb-8 drop-shadow-md">
+                    <motion.h1 variants={itemVariants} className="font-serif text-4xl sm:text-5xl md:text-6xl xl:text-[80px] font-black text-white leading-[1.05] tracking-tight mb-4 lg:mb-8 drop-shadow-md">
                         Srinivasa <br />
                         Ramanujan <br />
                         Institute.
                     </motion.h1>
 
                     {/* Subtitle */}
-                    <motion.p variants={itemVariants} className="text-white/95 text-lg md:text-xl font-medium leading-relaxed mb-12 drop-shadow-md">
+                    <motion.p variants={itemVariants} className="text-white/95 text-base sm:text-lg md:text-xl font-medium leading-relaxed mb-8 lg:mb-12 drop-shadow-md">
                         A center of excellence in engineering education, nurturing industry-ready professionals since 2007.
                     </motion.p>
 
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
                     </motion.div>
                     
                     {/* Bottom Accreditation block */}
-                    <motion.div variants={itemVariants} className="mt-16 pt-8 border-t border-white/30 flex flex-wrap gap-x-8 gap-y-4">
+                    <motion.div variants={itemVariants} className="mt-10 lg:mt-16 pt-8 border-t border-white/30 flex flex-wrap gap-x-8 gap-y-4">
                         {['AICTE Approved', 'JNTUA Affiliated'].map((item) => (
                             <span key={item} className="text-white text-[11px] font-bold tracking-[0.2em] uppercase flex items-center gap-2 drop-shadow-sm">
                                 <span className="w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
