@@ -38,6 +38,8 @@ const Hero: React.FC = () => {
                     alt="SRIT campus"
                     className="w-full h-full object-cover object-center"
                 />
+                {/* Full-bleed uniform dark mask overlay */}
+                <div className="absolute inset-0 bg-black/40" />
             </motion.div>
 
             {/* Left Side: Smooth Gradient Panel (No Blur) */}
@@ -45,7 +47,7 @@ const Hero: React.FC = () => {
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-                className="relative lg:absolute top-0 left-0 bottom-0 z-10 w-full lg:w-[65%] xl:w-[55%] bg-black/60 lg:bg-gradient-to-r lg:from-black/55 lg:via-black/25 lg:to-transparent flex flex-col justify-center py-20 lg:py-0 px-6 sm:px-12 xl:px-20"
+                className="relative lg:absolute top-0 left-0 bottom-0 z-10 w-full lg:w-[65%] xl:w-[55%] flex flex-col justify-center py-20 lg:py-0 px-6 sm:px-12 xl:px-20"
             >
                 <motion.div
                     variants={containerVariants}

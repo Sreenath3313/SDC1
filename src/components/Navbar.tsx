@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
@@ -156,22 +155,10 @@ const NavItem = ({ link, isSolid }: { link: NavLink, isSolid: boolean }) => {
 };
 
 const Navbar: React.FC = () => {
-    const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
-    const location = useLocation();
 
-    // Always solid on non-home pages
-    const isSolid = scrolled || location.pathname !== '/';
-
-    useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 20);
-        window.addEventListener('scroll', onScroll, { passive: true });
-
-        // Initial check
-        onScroll();
-
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+    // Always solid on all pages, no transparent background
+    const isSolid = true;
 
     return (
         <motion.nav
