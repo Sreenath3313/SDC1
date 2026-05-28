@@ -18,6 +18,7 @@ const columns: Record<string, FooterLink[]> = {
         { label: 'Fee Structure', href: 'https://www.srit.ac.in/fee-structure/', external: true },
         { label: 'Scholarships', href: 'https://www.srit.ac.in/scholarships/', external: true },
         { label: 'Library', href: 'https://www.srit.ac.in/library/', external: true },
+        { label: 'NDLI Club', href: '/ndli-club' },
     ],
     Departments: [
         { label: 'CSE', href: '/department/cse' },

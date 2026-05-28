@@ -63,6 +63,7 @@ const navLinks: NavLink[] = [
         subItems: [
             { label: 'IEEE Student Branch', href: '/#chapters' },
             { label: 'CSI Chapter', href: '/#chapters' },
+            { label: 'NDLI Club', href: '/ndli-club' },
             { label: 'Technical Clubs', href: '/#chapters' }
         ]
     },

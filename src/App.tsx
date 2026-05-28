@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import DepartmentPage from './pages/DepartmentPage'
 import AllDepartmentsPage from './pages/AllDepartmentsPage'
 import MessageFromHead from './pages/MessageFromHead'
+import NdliClubPage from './pages/NdliClubPage'
 import { useReveal } from './hooks/useReveal'
 
 function ScrollToTop() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/departments" element={<AllDepartmentsPage />} />
         <Route path="/department/:slug/*" element={<DepartmentPage />} />
         <Route path="/message-from-head" element={<MessageFromHead />} />
+        <Route path="/ndli-club" element={<NdliClubPage />} />
       </Routes>
     </BrowserRouter>
   )
