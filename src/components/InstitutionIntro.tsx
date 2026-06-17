@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const InstitutionIntro: React.FC = () => {
     return (
@@ -21,9 +22,11 @@ const InstitutionIntro: React.FC = () => {
                 {/* Full-bleed campus image — visual break */}
                 <div className="relative -mx-6 lg:-mx-0 mb-24 lg:mb-32 overflow-hidden reveal">
                     <div className="relative h-[360px] lg:h-[480px] overflow-hidden">
-                        <img
+                        <OptimizedImage
                             src="/Transport.jpg"
+                            webpSrc="/Transport.webp"
                             alt="SRIT campus grounds"
+                            sizes="100vw"
                             className="w-full h-full object-cover img-zoom"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />

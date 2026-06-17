@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const About: React.FC = () => {
     const ref = useRef(null);
@@ -67,7 +68,7 @@ const About: React.FC = () => {
                         initial={{ opacity: 0, x: 20 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="lg:col-span-6 relative mt-12 lg:mt-0"
+                        className="lg:col-span-6 relative mt-12 lg:mt-0 content-contained"
                     >
                         {/* Gradient Fade Overlays */}
                         <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-white to-transparent z-20 pointer-events-none" />
@@ -91,9 +92,10 @@ const About: React.FC = () => {
                                         transition: { duration: 0.3 }
                                     }}
                                 >
-                                    <img
+                                    <OptimizedImage
                                         src={img.src}
                                         alt={img.alt}
+                                        sizes="(max-width: 1024px) 80vw, 40vw"
                                         className="absolute inset-0 w-full h-full object-contain p-1 lg:p-2"
                                     />
                                 </motion.div>
