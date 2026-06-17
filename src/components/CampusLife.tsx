@@ -102,7 +102,7 @@ const CampusLife: React.FC = () => {
                                     src={item.image}
                                     webpSrc={item.webp}
                                     alt={item.title}
-                                    onError={(e) => { e.currentTarget.src = '/principal.jpg' }}
+                                    onError={(e) => { e.currentTarget.src = '/CollegeMain.jpg' }}
                                     sizes="(max-width: 768px) 100vw, 45vw"
                                     className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
                                         isActive ? 'grayscale-0 scale-100' : 'grayscale-[100%] scale-[1.15] opacity-60 hover:opacity-100'

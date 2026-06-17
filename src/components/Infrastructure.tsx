@@ -3,6 +3,11 @@ import { useRef } from 'react';
 import { infrastructureData } from '../data/infrastructure';
 import OptimizedImage from './common/OptimizedImage';
 
+const webpImageMap: Record<string, string> = {
+    '/library.jpg': '/library.webp',
+    '/Transport.jpg': '/Transport.webp',
+};
+
 const Infrastructure: React.FC = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-80px' });
@@ -29,10 +34,10 @@ const Infrastructure: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {infrastructureData.map((item, i) => {
-                        const imageSrc = item.image.startsWith('/') ? item.image : `/${item.image}`;
-                        const imageWebp = ['/library.jpg', '/Transport.jpg'].includes(imageSrc)
-                            ? imageSrc.replace(/\.(jpe?g|png)$/i, '.webp')
-                            : undefined;
+                        const imageSrc = /^(https?:)?\/\//.test(item.image)
+                            ? item.image
+                            : (item.image.startsWith('/') ? item.image : `/${item.image}`);
+                        const imageWebp = webpImageMap[imageSrc];
                         return (
                             <motion.div
                                 key={item.id}
