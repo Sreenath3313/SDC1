@@ -8,19 +8,19 @@ const campusItems = [
         id: '01',
         title: 'TECH_LABS',
         subtitle: 'Accessing secure facility imagery. High-resolution textures loaded.',
-        image: '/labs.jpg',
+        image: '/ComputerLab.JPG',
     },
     {
         id: '02',
         title: 'CLUB_HUBS',
         subtitle: 'Collaborative learning communities and innovation workspaces.',
-        image: '/shutterbugs.jpg',
+        image: '/College.JPG',
     },
     {
         id: '03',
         title: 'SPORTS_ARENA',
         subtitle: 'Outdoor athletic grounds and professional indoor courts.',
-        image: '/sportfacilites.jpg',
+        image: '/BasketBall.JPG',
     },
     {
         id: '04',
@@ -44,7 +44,7 @@ const campusItems = [
         id: '07',
         title: 'INTERN_HOUSING',
         subtitle: 'Advanced programs handling student housing and skills integration.',
-        image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+        image: '/Campus.JPG',
     },
 ];
 

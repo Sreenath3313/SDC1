@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #FF4400;       /* Ultra-bright, punchy neon-leaning pure orange */
-  --color-primary-dark: #E63D00;  /* Slightly deeper for hovers */
-  --color-primary-light: #FF7733; /* Very bright highlight */
+  --color-primary: #FF6600;       /* Truer, more vibrant orange */
+  --color-primary-dark: #E65C00;  /* Deeper orange */
+  --color-primary-light: #FF8833; /* Brighter orange highlight */
   
   /* Clean, crisp modern Slate for highly readable text (No muddy colors) */
   --color-neutral-dark: #0A0F1A;    
@@ -13,10 +13,11 @@
   --color-neutral-500: #64748B;     
   --color-neutral-400: #94A3B8;     
   --color-neutral-300: #CBD5E1;     
-  --color-neutral-200: #F1F5F9;     /* Lightened to make borders/backgrounds whiter */
-  --color-neutral-100: #F8FAFC;     /* Extremely bright off-white */
+  --color-neutral-200: #F4F7F9;     /* Lightened to make borders/backgrounds whiter */
+  --color-neutral-100: #FFFFFF;     /* Pure white */
+  --color-neutral-50: #FFFFFF;      /* Pure white */
   
-  --color-warm-50: #FCFDFD;         /* Almost pure white */
+  --color-warm-50: #FFFFFF;         /* Pure white */
   --color-white: #FFFFFF;
 
   --font-serif: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

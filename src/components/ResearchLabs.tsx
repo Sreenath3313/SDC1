@@ -34,25 +34,25 @@ const ResearchLabs: React.FC = () => {
                         {
                             name: 'Dassault Systèmes 3DEXPERIENCE Center',
                             desc: 'State-of-the-art facility for product design, simulation, and manufacturing in collaboration with Dassault.',
-                            image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                            image: '/College.JPG',
                             partner: 'Dassault Systèmes'
                         },
                         {
                             name: 'AI & Deep Learning Hub',
                             desc: 'Advanced supercomputing infrastructure dedicated to artificial intelligence, neural networks, and computer vision.',
-                            image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                            image: '/ComputerLab.JPG',
                             partner: 'APSSDC'
                         },
                         {
                             name: 'IoT & Smart Sensors Lab',
                             desc: 'Prototyping facility for Industrial Internet of Things, embedded systems, and sensor networks.',
-                            image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                            image: '/Library 1.JPG',
                             partner: 'Texas Instruments'
                         },
                         {
                             name: 'Advanced Robotics Workspace',
                             desc: 'Dedicated center for autonomous systems, robotic arms, and mechatronics engineering.',
-                            image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                            image: '/Library.JPG',
                             partner: 'Leading Industry Ties'
                         }
                     ].map((lab, i) => (

@@ -10,17 +10,17 @@ const facilities: Facility[] = [
     {
         title: 'Modern Library',
         description: 'The library manages knowledge both in print and digital formats, with a collection of 51,477 volumes, 36+ national & international journals, and a digital library with 12 computer systems for accessing e-journals, e-books, and e-learning resources.',
-        image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/srit.jpg',
     },
     {
         title: 'Advanced Internships',
         description: 'SRIT offers advanced internship programs for all streams with personal development to integrate student skills to market level, familiarizing them with corporate-level work standards and optimizing their performance.',
-        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/srit1.jpg',
     },
     {
         title: 'Industry Partnerships',
         description: 'SRIT maintains strategic placement partnerships with leading organizations including EduSkills Foundation, AWS, Palo Alto Networks, and EC Council, providing students real-world industry exposure and career opportunities.',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/Campus.JPG',
     },
 ];
 

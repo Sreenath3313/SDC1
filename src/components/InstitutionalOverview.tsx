@@ -59,7 +59,7 @@ const InstitutionalOverview: React.FC = () => {
                     <div className="relative">
                         <div className="overflow-hidden rounded-sm">
                             <img
-                                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                src="/culturalevent.jpg"
                                 alt="SRIT students on campus"
                                 className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
                             />

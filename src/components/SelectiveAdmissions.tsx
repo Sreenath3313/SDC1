@@ -6,7 +6,7 @@ const SelectiveAdmissions: React.FC = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <img
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c476?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                    src="/Transport.jpg"
                     alt="SRIT campus architecture"
                     className="w-full h-full object-cover"
                 />

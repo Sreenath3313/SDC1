@@ -30,7 +30,7 @@ export const infrastructureData: Infrastructure[] = [
         id: 'infra-4',
         name: 'Advance Internship Programs',
         description: 'Programs for all streams with personal development to integrate skills as per market level so they can inherit performance.',
-        image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+        image: '/sports.jpg',
         span: 'md:col-span-2'
     }
 ];

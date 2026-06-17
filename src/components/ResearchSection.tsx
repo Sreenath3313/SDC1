@@ -52,7 +52,7 @@ const ResearchSection: React.FC = () => {
             {/* Cinematic full-width image */}
             <div className="relative w-full h-[400px] lg:h-[520px] overflow-hidden">
                 <img
-                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                    src="/BasketBall.JPG"
                     alt="SRIT library and learning resources"
                     className="w-full h-full object-cover img-zoom"
                 />

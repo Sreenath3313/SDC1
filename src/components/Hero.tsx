@@ -27,20 +27,15 @@ const Hero: React.FC = () => {
         <section className="relative min-h-[100svh] w-full bg-neutral-dark overflow-hidden flex flex-col lg:block">
             
             {/* Background Image: Full Bleed underneath everything */}
-            <motion.div 
-                initial={{ scale: 1.05, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 2, ease: "easeOut" }}
-                className="absolute inset-0 z-0"
-            >
+            <div className="absolute inset-0 z-0">
                 <img
-                    src="/srit1.jpg"
+                    src="/CollegeMain.jpg"
                     alt="SRIT campus"
                     className="w-full h-full object-cover object-center"
                 />
                 {/* Full-bleed uniform dark mask overlay */}
                 <div className="absolute inset-0 bg-black/40" />
-            </motion.div>
+            </div>
 
             {/* Left Side: Smooth Gradient Panel (No Blur) */}
             <motion.div 

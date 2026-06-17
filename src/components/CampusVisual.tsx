@@ -4,7 +4,7 @@ const CampusVisual: React.FC = () => {
     return (
         <section className="relative w-full h-[50vh] lg:h-[70vh] min-h-[400px] overflow-hidden">
             <img
-                src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                src="/College 1.jpg"
                 alt="SRIT campus aerial view"
                 className="w-full h-full object-cover"
             />

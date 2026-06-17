@@ -5,13 +5,13 @@ import { departments } from '../data/departments';
 import { Users, Microscope, GraduationCap, Briefcase } from 'lucide-react';
 
 const deptImages: Record<string, string> = {
-    CSE: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    CSM: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    ECE: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    EEE: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    MEC: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    CAD: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    CIV: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    CSE: '/CSEDept.jpg',
+    CSM: '/CSMDept.JPG',
+    ECE: '/ECE Dept.JPG',
+    EEE: '/EEE Dept.JPG',
+    MEC: '/MechDept.JPG',
+    CAD: '/CSDDept.JPG',
+    CIV: '/CIVILDept.JPG',
 };
 
 const Departments: React.FC = () => {

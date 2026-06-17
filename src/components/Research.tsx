@@ -5,19 +5,19 @@ const themes = [
     {
         title: 'Artificial Intelligence',
         description: 'Machine learning, neural networks, NLP, and intelligent automation systems for next-generation computing.',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        image: '/labs.jpg',
         index: '01',
     },
     {
         title: 'Smart Infrastructure',
         description: 'IoT-enabled systems, sustainable engineering, and intelligent campus solutions.',
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
+        image: '/sportfacilites.jpg',
         index: '02',
     },
     {
         title: 'Advanced Electronics',
         description: 'VLSI design, embedded systems, signal processing, and communication technologies.',
-        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80',
+        image: '/sports.jpg',
         index: '03',
     },
 ];

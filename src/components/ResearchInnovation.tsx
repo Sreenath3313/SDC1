@@ -4,17 +4,17 @@ const themes = [
     {
         title: 'Artificial Intelligence',
         description: 'Pioneering research in machine learning, deep learning, and intelligent systems that shape tomorrow\'s technology landscape.',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/College 1.jpg',
     },
     {
         title: 'Smart Infrastructure',
         description: 'Developing sustainable, intelligent infrastructure solutions through advanced civil and mechanical engineering research.',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/College 2.JPG',
     },
     {
         title: 'Advanced Electronics',
         description: 'Innovation in embedded systems, VLSI design, and next-generation communication technologies.',
-        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/College 3.JPG',
     },
 ];
 

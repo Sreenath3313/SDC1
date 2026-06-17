@@ -22,7 +22,7 @@ const InstitutionIntro: React.FC = () => {
                 <div className="relative -mx-6 lg:-mx-0 mb-24 lg:mb-32 overflow-hidden reveal">
                     <div className="relative h-[360px] lg:h-[480px] overflow-hidden">
                         <img
-                            src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80"
+                            src="/Transport.jpg"
                             alt="SRIT campus grounds"
                             className="w-full h-full object-cover img-zoom"
                         />

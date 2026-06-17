@@ -10,21 +10,21 @@ const mockProjects = [
         title: 'Autonomous Drone Navigation System',
         category: 'Student Project',
         description: 'A deep learning-based navigation system for drones in GPS-denied environments.',
-        image: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/srit.jpg',
         year: '2023'
     },
     {
         title: 'Smart Healthcare Monitoring Framework',
         category: 'Faculty Research',
         description: 'An IoT-enabled framework for remote continuous health monitoring of elderly patients.',
-        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/srit1.jpg',
         year: '2023'
     },
     {
         title: 'Blockchain for Academic Credentialing',
         category: 'Funded Project',
         description: 'A decentralized application for verifying and issuing academic certificates securely.',
-        image: 'https://images.unsplash.com/photo-1639762681485-074b7f4bec4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: '/Campus.JPG',
         year: '2024'
     }
 ];

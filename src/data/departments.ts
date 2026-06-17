@@ -64,7 +64,7 @@ export const departments: DepartmentData[] = [
             'Certified faculty with industry and academic experience',
             '8 state-of-the-art computing laboratories',
         ],
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/College 1.jpg',
         researchAreas: [
             'Artificial Intelligence',
             'Cybersecurity',
@@ -171,7 +171,7 @@ export const departments: DepartmentData[] = [
             'Industry exposure through partner organizations (TCS, Infosys, Wipro)',
             'Project-based learning with real-world datasets',
         ],
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/College 2.JPG',
         researchAreas: [
             'Deep Learning',
             'Computer Vision',
@@ -362,7 +362,7 @@ export const departments: DepartmentData[] = [
             'Active technical competitions and research participation',
             'Top recruiters: Qualcomm, Texas Instruments, BEL, ECIL, Infosys, Wipro',
         ],
-        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/College 3.JPG',
         researchAreas: [
             'VLSI Design',
             'Signal Processing',
@@ -398,7 +398,7 @@ export const departments: DepartmentData[] = [
             name: 'Dr. M. Venkata Rao',
             designation: 'Head of the Department, ECE',
             message: 'The ECE department is dedicated to providing an enriching learning experience that combines theoretical knowledge with practical skills in electronics and communication engineering. We continuously update our curriculum to match the rapid advancements in the field, ensuring our graduates are industry-ready and capable of contributing to cutting-edge technologies in VLSI, IoT, and wireless communications.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+            image: '/College.JPG',
         },
         faculty: [
             {
@@ -463,7 +463,7 @@ export const departments: DepartmentData[] = [
             'Renewable energy and smart grid technologies exposure',
             'Career preparation in power and automation engineering',
         ],
-        image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/ComputerLab.JPG',
         researchAreas: [
             'Power Systems & Smart Grids',
             'Renewable Energy Integration',
@@ -499,7 +499,7 @@ export const departments: DepartmentData[] = [
             name: 'Dr. S. Nagaraj',
             designation: 'Head of the Department, EEE',
             message: 'The EEE department strives to provide a comprehensive education that prepares students for successful careers in electrical engineering and related fields. We emphasize both theoretical foundations and practical skills, enabling our graduates to contribute effectively to power sector, automation, and the growing renewable energy industry.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+            image: '/Library 1.JPG',
         },
         faculty: [
             {
@@ -558,7 +558,7 @@ export const departments: DepartmentData[] = [
             'CAD/CAM software training (AutoCAD, ANSYS, SolidWorks, CATIA)',
             'Diverse career paths across manufacturing, automotive, aerospace, and energy sectors',
         ],
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/Library.JPG',
         researchAreas: [
             'Thermal Sciences',
             'Advanced Manufacturing',
@@ -598,7 +598,7 @@ export const departments: DepartmentData[] = [
             name: 'Dr. V. Krishna Reddy',
             designation: 'Head of the Department, MEC',
             message: 'The Mechanical Engineering department is committed to producing engineers who are well-versed in both traditional and modern manufacturing technologies. Our curriculum integrates classical mechanical engineering fundamentals with modern tools like CAD/CAM, FEA, and automation to produce industry-ready engineers. We encourage students to take up challenging projects, internships, and research activities to become innovative contributors to the nation.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+            image: '/BasketBall.JPG',
         },
         faculty: [
             {
@@ -663,7 +663,7 @@ export const departments: DepartmentData[] = [
             'Preparation for data science and ML engineering careers',
             'Big data tools: Hadoop, Spark, Kafka, Tableau',
         ],
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/Transport.jpg',
         researchAreas: [
             'Big Data Analytics',
             'Predictive Modeling',
@@ -703,7 +703,7 @@ export const departments: DepartmentData[] = [
             name: 'Dr. A. Srinivas',
             designation: 'Head of the Department, CAD',
             message: 'The AI & Data Science department is focused on building a new generation of data professionals who can drive innovation through intelligent data analysis. With industry-aligned curriculum, cloud computing labs, and real-world project exposure, we ensure our graduates are equipped with the skills demanded by top employers in AI and data analytics.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+            image: '/culturalevent.jpg',
         },
         faculty: [
             {
@@ -756,7 +756,7 @@ export const departments: DepartmentData[] = [
             'Practical exposure through site visits, labs (6 labs), and CAD software',
             'Career opportunities in construction, urban planning, and government agencies',
         ],
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
+        image: '/labs.jpg',
         researchAreas: [
             'Structural Engineering',
             'Geotechnical Engineering',
@@ -792,7 +792,7 @@ export const departments: DepartmentData[] = [
             name: 'Dr. R. Suresh Kumar',
             designation: 'Head of the Department, Civil',
             message: 'The Civil Engineering department is dedicated to developing infrastructure professionals who can contribute to the nation\'s growth through sustainable construction practices. Our curriculum covers the entire spectrum of civil engineering disciplines, from surveying and structural design to environmental and transportation engineering. We prepare students to meet the challenges of modern infrastructure development with technical excellence and ethical responsibility.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+            image: '/sportfacilites.jpg',
         },
         faculty: [
             {
