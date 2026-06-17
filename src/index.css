@@ -28,6 +28,8 @@ html {
   scroll-behavior: smooth;
   font-size: 95%; /* Default for mobile screens */
   overflow-x: hidden;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Fluid responsive typography scaling */
@@ -47,9 +49,9 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
-  color: var(--color-neutral-dark);
-  background-color: var(--color-white);
+  font-family: var(--font-sans, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+  color: var(--color-neutral-dark, #0A0F1A);
+  background-color: var(--color-white, #FFFFFF);
   font-size: 1rem;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
@@ -76,6 +78,19 @@ h6 {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+.gpu-accelerated {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.content-contained {
+  contain: layout paint style;
 }
 
 /* ─── Typography Tokens ──────────────────────────────── */

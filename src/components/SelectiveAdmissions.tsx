@@ -1,13 +1,16 @@
 import React from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const SelectiveAdmissions: React.FC = () => {
     return (
         <section id="admissions" className="relative py-28 lg:py-36 overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
-                <img
+                <OptimizedImage
                     src="/Transport.jpg"
+                    webpSrc="/Transport.webp"
                     alt="SRIT campus architecture"
+                    sizes="100vw"
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-neutral-dark/95 via-neutral-dark/85 to-neutral-dark/70" />

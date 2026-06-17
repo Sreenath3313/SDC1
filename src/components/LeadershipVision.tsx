@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const LeadershipVision: React.FC = () => {
     const ref = useRef(null);
@@ -40,9 +41,10 @@ const LeadershipVision: React.FC = () => {
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
-                                <img
+                                <OptimizedImage
                                     src="/sambasir.jpg"
                                     alt="Sri. A. Sambasiva Reddy"
+                                    sizes="160px"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -68,9 +70,10 @@ const LeadershipVision: React.FC = () => {
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
-                                <img
+                                <OptimizedImage
                                     src="/padmavathi.jpg"
                                     alt="Smt. Jonnalagadda Padmavathy"
+                                    sizes="160px"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -96,9 +99,10 @@ const LeadershipVision: React.FC = () => {
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
-                                <img
+                                <OptimizedImage
                                     src="/ranjit.jpg"
                                     alt="Dr. M. Ranjit Reddy"
+                                    sizes="160px"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -124,9 +128,10 @@ const LeadershipVision: React.FC = () => {
                         <div className="flex flex-col items-center w-full">
                             {/* Circular Image wrapper */}
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md bg-neutral-50 mb-6 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500">
-                                <img
+                                <OptimizedImage
                                     src="/principal.jpg"
                                     alt="Dr. G. Balakrishna"
+                                    sizes="160px"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

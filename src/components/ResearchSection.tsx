@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const facilities = [
     {
@@ -51,9 +52,11 @@ const ResearchSection: React.FC = () => {
         <section id="research" className="bg-white">
             {/* Cinematic full-width image */}
             <div className="relative w-full h-[400px] lg:h-[520px] overflow-hidden">
-                <img
+                <OptimizedImage
                     src="/BasketBall.JPG"
+                    webpSrc="/BasketBall.webp"
                     alt="SRIT library and learning resources"
+                    sizes="100vw"
                     className="w-full h-full object-cover img-zoom"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent" />

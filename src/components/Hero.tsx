@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import OptimizedImage from './common/OptimizedImage';
 
 // Animation variants for staggered children
 const containerVariants = {
@@ -28,9 +29,12 @@ const Hero: React.FC = () => {
             
             {/* Background Image: Full Bleed underneath everything */}
             <div className="absolute inset-0 z-0">
-                <img
+                <OptimizedImage
                     src="/CollegeMain.jpg"
+                    webpSrc="/CollegeMain.webp"
                     alt="SRIT campus"
+                    eager
+                    sizes="100vw"
                     className="w-full h-full object-cover object-center"
                 />
                 {/* Full-bleed uniform dark mask overlay */}
@@ -42,7 +46,7 @@ const Hero: React.FC = () => {
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-                className="relative lg:absolute top-0 left-0 bottom-0 z-10 w-full lg:w-[65%] xl:w-[55%] flex flex-col justify-center py-20 lg:py-0 px-6 sm:px-12 xl:px-20"
+                className="relative lg:absolute top-0 left-0 bottom-0 z-10 w-full lg:w-[65%] xl:w-[55%] flex flex-col justify-center py-20 lg:py-0 px-6 sm:px-12 xl:px-20 gpu-accelerated content-contained"
             >
                 <motion.div
                     variants={containerVariants}

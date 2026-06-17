@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import OptimizedImage from './common/OptimizedImage';
 
 const campusItems = [
     {
@@ -9,18 +10,21 @@ const campusItems = [
         title: 'TECH_LABS',
         subtitle: 'Accessing secure facility imagery. High-resolution textures loaded.',
         image: '/ComputerLab.JPG',
+        webp: '/ComputerLab.webp',
     },
     {
         id: '02',
         title: 'CLUB_HUBS',
         subtitle: 'Collaborative learning communities and innovation workspaces.',
         image: '/College.JPG',
+        webp: '/College.webp',
     },
     {
         id: '03',
         title: 'SPORTS_ARENA',
         subtitle: 'Outdoor athletic grounds and professional indoor courts.',
         image: '/BasketBall.JPG',
+        webp: '/BasketBall.webp',
     },
     {
         id: '04',
@@ -33,18 +37,21 @@ const campusItems = [
         title: 'LIBRARY_ARCHIVES',
         subtitle: 'Vast collection of 51,477 Volumes and digital e-resources.',
         image: '/library.jpg',
+        webp: '/library.webp',
     },
     {
         id: '06',
         title: 'TRANSIT_SYSTEM',
         subtitle: 'Fleet of 29 buses covering crucial routes for all scholars.',
         image: '/Transport.jpg',
+        webp: '/Transport.webp',
     },
     {
         id: '07',
         title: 'INTERN_HOUSING',
         subtitle: 'Advanced programs handling student housing and skills integration.',
         image: '/Campus.JPG',
+        webp: '/Campus.webp',
     },
 ];
 
@@ -84,17 +91,19 @@ const CampusLife: React.FC = () => {
                                 key={item.id}
                                 layout
                                 onClick={() => setActiveIndex(index)}
-                                className={`relative rounded-xl md:rounded-sm overflow-hidden cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+                                className={`relative rounded-xl md:rounded-sm overflow-hidden cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] gpu-accelerated content-contained ${
                                     isActive 
                                         ? 'flex-[5] h-[350px] md:h-full md:flex-[3]' 
                                         : 'h-[80px] md:h-full w-full md:w-[45px] lg:w-[60px]'
                                 }`}
                             >
                                 {/* Image background */}
-                                <img
+                                <OptimizedImage
                                     src={item.image}
+                                    webpSrc={item.webp}
                                     alt={item.title}
-                                    onError={(e) => { e.currentTarget.src = '/principal.jpg' }}
+                                    onError={(e) => { e.currentTarget.src = '/CollegeMain.jpg' }}
+                                    sizes="(max-width: 768px) 100vw, 45vw"
                                     className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
                                         isActive ? 'grayscale-0 scale-100' : 'grayscale-[100%] scale-[1.15] opacity-60 hover:opacity-100'
                                     }`}

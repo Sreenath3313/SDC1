@@ -1,11 +1,14 @@
 import React from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const CampusVisual: React.FC = () => {
     return (
         <section className="relative w-full h-[50vh] lg:h-[70vh] min-h-[400px] overflow-hidden">
-            <img
+            <OptimizedImage
                 src="/College 1.jpg"
+                webpSrc="/College 1.webp"
                 alt="SRIT campus aerial view"
+                sizes="100vw"
                 className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />

@@ -21,6 +21,7 @@ import {
     Server,
     Info
 } from 'lucide-react';
+import OptimizedImage from '../components/common/OptimizedImage';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -278,9 +279,11 @@ const NdliClubPage: React.FC = () => {
                                     
                                     {/* Outer Border Frame */}
                                     <div className="relative rounded-2xl p-2 bg-neutral-900 border border-neutral-700 shadow-2xl overflow-hidden">
-                                        <img
+                                        <OptimizedImage
                                             src="/library.jpg"
+                                            webpSrc="/library.webp"
                                             alt="SRIT Central Library"
+                                            sizes="(max-width: 1024px) 90vw, 340px"
                                             className="w-full h-auto object-cover rounded-xl aspect-[4/3] img-zoom shadow-inner"
                                         />
                                         
